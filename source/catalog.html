@@ -7,15 +7,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="header">
     <a class="header__logo-image logo-image" href="index.html">
-      <img src="images/logo-mobile.svg" width="32" height="38" alt="Логотип Cat Energy">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-cat-energy-img-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-cat-energy-img-tablet.svg" width="60" height="50">
+        <img class="logo-image_picture" src="images/logo-cat-energy-img-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
+      </picture>
     </a>
     <a class="header__logo-text logo-text" tabindex="-1" href="index.html">
-      <img src="images/logo-2.svg" width="101" height="18" alt="Текстовый вариант логотипа Cat Energy">
+      <img class="logo-text_picture" src="images/logo-cat-energy-text.svg" alt="Текстовый вариант логотипа Cat Energy" width="101" height="18">
     </a>
     <nav class="navigation">
       <button class="navigation__toggle button-toggle" type="button">
@@ -39,9 +47,15 @@
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item card">
-          <a class="card__image" href="#" tabindex="-1">
-            <img src="#" width="140" height="107" alt="Стандартная упаковка Cat Energy
-            Pro Курица">
+          <a class="card__link" href="#" tabindex="-1">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/ce-chicken-pro500-desktop@1x.webp 1x, images/ce-chicken-pro500-desktop@2x.webp 2x" width="196" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/ce-chicken-pro500-tablet@1x.webp 1x, images/ce-chicken-pro500-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/ce-chicken-pro500-mobile@1x.webp 1x, images/ce-chicken-pro500-mobile@2x.webp 2x" width="140" height="107">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/ce-chicken-pro500-desktop@1x.png 1x, images/ce-chicken-pro500-desktop@2x.png 2x" width="196" height="210">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/ce-chicken-pro500-tablet@1x.png 1x, images/ce-chicken-pro500-tablet@2x.png 2x" width="200" height="210">
+              <img class="card__image" src="images/ce-chicken-pro500-mobile@1x.png" srcset="images/ce-chicken-pro500-mobile@2x.png 2x" alt="Стандартная упаковка Cat Energy Pro Курица" width="140" height="107">
+            </picture>
           </a>
           <a class="card__title" href="#" tabindex="-1">
             <h2>Cat Energy Pro 500&nbsp;г</h2>
@@ -57,9 +71,15 @@
           <button class="card__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog__item card">
-          <a class="card__image" href="#" tabindex="-1">
-            <img src="#" width="140" height="107" alt="Большая упаковка Cat Energy
-            Pro Курица">
+          <a class="card__link" href="#" tabindex="-1">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/ce-chicken-pro1000-desktop@1x.webp 1x, images/ce-chicken-pro1000-desktop@2x.webp 2x" width="196" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/ce-chicken-pro1000-tablet@1x.webp 1x, images/ce-chicken-pro1000-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/ce-chicken-pro1000-mobile@1x.webp 1x, images/ce-chicken-pro1000-mobile@2x.webp 2x" width="140" height="107">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/ce-chicken-pro1000-desktop@1x.png 1x, images/ce-chicken-pro1000-desktop@2x.png 2x" width="196" height="210">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/ce-chicken-pro1000-tablet@1x.png 1x, images/ce-chicken-pro1000-tablet@2x.png 2x" width="200" height="210">
+              <img class="card__image" src="images/ce-chicken-pro1000-mobile@1x.png" srcset="images/ce-chicken-pro1000-mobile@2x.png 2x" alt="Большая упаковка Cat Energy Pro Курица" width="140" height="107">
+            </picture>
           </a>
           <a class="card__title" href="#" tabindex="-1">
             <h2>Cat Energy Pro 1000&nbsp;г</h2>
@@ -75,9 +95,15 @@
           <button class="card__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog__item card">
-          <a class="card__image" href="#" tabindex="-1">
-            <img src="#" width="140" height="107" alt="Стандартная упаковка Cat Energy
-            Pro Рыба">
+          <a class="card__link" href="#" tabindex="-1">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/ce-fish-pro500-desktop@1x.webp 1x, images/ce-fish-pro500-desktop@2x.webp 2x" width="196" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/ce-fish-pro500-tablet@1x.webp 1x, images/ce-fish-pro500-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/ce-fish-pro500-mobile@1x.webp 1x, images/ce-fish-pro500-mobile@2x.webp 2x" width="140" height="107">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/ce-fish-pro500-desktop@1x.png 1x, images/ce-fish-pro500-desktop@2x.png 2x" width="196" height="210">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/ce-fish-pro500-tablet@1x.png 1x, images/ce-fish-pro500-tablet@2x.png 2x" width="200" height="210">
+              <img class="card__image" src="images/ce-fish-pro500-mobile@1x.png" srcset="images/ce-fish-pro500-mobile@2x.png 2x" alt="Стандартная упаковка Cat Energy Pro Рыба" width="140" height="107">
+            </picture>
           </a>
           <a class="card__title" href="#" tabindex="-1">
             <h2>Cat Energy Pro 500&nbsp;г</h2>
@@ -93,9 +119,15 @@
           <button class="card__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog__item card">
-          <a class="card__image" href="#" tabindex="-1">
-            <img src="#" width="140" height="107" alt="Большая упаковка Cat Energy
-            Pro Рыба">
+          <a class="card__link" href="#" tabindex="-1">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/ce-fish-pro1000-desktop@1x.webp 1x, images/ce-fish-pro1000-desktop@2x.webp 2x" width="196" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/ce-fish-pro1000-tablet@1x.webp 1x, images/ce-fish-pro1000-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/ce-fish-pro1000-mobile@1x.webp 1x, images/ce-fish-pro1000-mobile@2x.webp 2x" width="140" height="107">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/ce-fish-pro1000-desktop@1x.png 1x, images/ce-fish-pro1000-desktop@2x.png 2x" width="196" height="210">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/ce-fish-pro1000-tablet@1x.png 1x, images/ce-fish-pro1000-tablet@2x.png 2x" width="200" height="210">
+              <img class="card__image" src="images/ce-fish-pro1000-mobile@1x.png" srcset="images/ce-fish-pro1000-mobile@2x.png 2x" alt="Большая упаковка Cat Energy Pro Рыба" width="140" height="107">
+            </picture>
           </a>
           <a class="card__title" href="#" tabindex="-1">
             <h2>Cat Energy Pro 1000&nbsp;г</h2>
@@ -111,9 +143,15 @@
           <button class="card__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog__item card">
-          <a class="card__image" href="#" tabindex="-1">
-            <img src="#" width="140" height="107" alt="Стандартная упаковка Cat Energy
-            Slim Гречка">
+          <a class="card__link" href="#" tabindex="-1">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/ce-buckwheat-slim500-desktop@1x.webp 1x, images/ce-buckwheat-slim500-desktop@2x.webp 2x" width="196" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/ce-buckwheat-slim500-tablet@1x.webp 1x, images/ce-buckwheat-slim500-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/ce-buckwheat-slim500-mobile@1x.webp 1x, images/ce-buckwheat-slim500-mobile@2x.webp 2x" width="140" height="107">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/ce-buckwheat-slim500-desktop@1x.png 1x, images/ce-buckwheat-slim500-desktop@2x.png 2x" width="196" height="210">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/ce-buckwheat-slim500-tablet@1x.png 1x, images/ce-buckwheat-slim500-tablet@2x.png 2x" width="200" height="210">
+              <img class="card__image" src="images/ce-buckwheat-slim500-mobile@1x.png" srcset="images/ce-buckwheat-slim500-mobile@2x.png 2x" alt="Стандартная упаковка Cat Energy Slim Гречка" width="140" height="107">
+            </picture>
           </a>
           <a class="card__title" href="#" tabindex="-1">
             <h2>Cat Energy Slim 500&nbsp;г</h2>
@@ -129,9 +167,15 @@
           <button class="card__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog__item card">
-          <a class="card__image" href="#" tabindex="-1">
-            <img src="#" width="140" height="107" alt="Большая упаковка Cat Energy
-            Slim Гречка">
+          <a class="card__link" href="#" tabindex="-1">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/ce-buckwheat-slim1000-desktop@1x.webp 1x, images/ce-buckwheat-slim1000-desktop@2x.webp 2x" width="196" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/ce-buckwheat-slim1000-tablet@1x.webp 1x, images/ce-buckwheat-slim1000-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/ce-buckwheat-slim1000-mobile@1x.webp 1x, images/ce-buckwheat-slim1000-mobile@2x.webp 2x" width="140" height="107">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/ce-buckwheat-slim1000-desktop@1x.png 1x, images/ce-buckwheat-slim1000-desktop@2x.png 2x" width="196" height="210">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/ce-buckwheat-slim1000-tablet@1x.png 1x, images/ce-buckwheat-slim1000-tablet@2x.png 2x" width="200" height="210">
+              <img class="card__image" src="images/ce-buckwheat-slim1000-mobile@1x.png" srcset="images/ce-buckwheat-slim1000-mobile@2x.png 2x" alt="Большая упаковка Cat Energy Slim Гречка" width="140" height="107">
+            </picture>
           </a>
           <a class="card__title" href="#" tabindex="-1">
             <h2>Cat Energy Slim 1000&nbsp;г</h2>
@@ -147,9 +191,15 @@
           <button class="card__button button button--primary" type="button">Заказать</button>
         </li>
         <li class="catalog__item card">
-          <a class="card__image" href="#" tabindex="-1">
-            <img src="#" width="140" height="107" alt="Стандартная упаковка Cat Energy
-            Slim Рис">
+          <a class="card__link" href="#" tabindex="-1">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/ce-rice-slim500-desktop@1x.webp 1x, images/ce-rice-slim500-desktop@2x.webp 2x" width="196" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/ce-rice-slim500-tablet@1x.webp 1x, images/ce-rice-slim500-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/ce-rice-slim500-mobile@1x.webp 1x, images/ce-rice-slim500-mobile@2x.webp 2x" width="140" height="107">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/ce-rice-slim500-desktop@1x.png 1x, images/ce-rice-slim500-desktop@2x.png 2x" width="196" height="210">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/ce-rice-slim500-tablet@1x.png 1x, images/ce-rice-slim500-tablet@2x.png 2x" width="200" height="210">
+              <img class="card__image" src="images/ce-rice-slim500-mobile@1x.png" srcset="images/ce-rice-slim500-mobile@2x.png 2x" alt="Стандартная упаковка Cat Energy Slim Рис" width="140" height="107">
+            </picture>
           </a>
           <a class="card__title" href="#" tabindex="-1">
             <h2>Cat Energy Slim 500&nbsp;г</h2>
@@ -234,11 +284,19 @@
     <section class="address">
       <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="address__text">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-reserve-desktop@1x.webp 1x, images/map-reserve-desktop@2x.webp 2x" width="1440" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/map-reserve-tablet@1x.webp 1x, images/map-reserve-tablet@2x.webp 2x" width="768" height="400">
+        <source type="image/webp" srcset="images/map-reserve-mobile@1x.webp 1x, images/map-reserve-mobile@2x.webp 2x" width="320" height="362">
+        <source type="image/jpg" media="(min-width: 1440px)" srcset="images/map-reserve-desktop@1x.jpg 1x, images/map-reserve-desktop@2x.jpg 2x" width="1440" height="400">
+        <source type="image/jpg" media="(min-width: 768px)" srcset="images/map-reserve-tablet@1x.jpg 1x, images/map-reserve-tablet@2x.jpg 2x" width="768" height="400">
+        <img class="address_map-reserve-image" src="images/map-reserve-mobile@1x.jpg" srcset="images/map-reserve-mobile@2x.jpg 2x" alt="Карта с отмеченной локацией магазина Cat Energy" width="320" height="362">
+      </picture>
     </section>
   </main>
   <footer class="footer">
     <a class="footer__logo-text logo-text" href="index.html">
-      <img src="images/logo-2.svg" width="101" height="18" alt="Текстовый вариант логотипа Cat Energy">
+      <img class="logo-text_picture" src="images/logo-cat-energy-text.svg" alt="Текстовый вариант логотипа Cat Energy" width="101" height="18">
     </a>
     <section class="footer__social social">
       <h2 class="visually-hidden">Давайте дружить!</h2>
