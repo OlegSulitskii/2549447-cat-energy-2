@@ -1,0 +1,23 @@
+.card {
+  font-family: "Oswald", sans-serif;
+  background-color: #ffffff;
+}
+
+.card__link-title {
+  text-decoration: none;
+}
+
+.card__title {
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+}
+
+.card__characteristic {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
