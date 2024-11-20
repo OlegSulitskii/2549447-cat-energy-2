@@ -1,55 +1,45 @@
 .stats {
-  font-family: "Oswald", sans-serif;
-  background-color: #eaeaea;
+  background-color: $color-bg-secondary;
 }
 
 .stats__title {
   font-size: 36px;
-  line-height: 40px;
-  font-weight: inherit;
-}
-
-.stats__description {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
+  line-height: calc(40/36);
+  color: $text-color-accent;
 }
 
 .stats__term {
-  font-family: "Lato", sans-serif;
   font-size: 12px;
-  line-height: 12px;
-  color: #444444;
+  line-height: 1;
   text-transform: lowercase;
 }
 
 .stats__number {
+  font-family: $font-secondary;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   text-transform: uppercase;
+  color: $text-color-accent;
 }
 
 .stats__item--up {
-  font-family: inherit;
-  color: #000000;
+  font-family: $font-secondary;
   font-size: 14px;
-  line-height: 20px;
+  line-height: calc(20/14);
   text-transform: uppercase;
+  color: $text-color-accent;
 }
 
 .stats__term--up {
-  font-family: inherit;
-  color: inherit;
-  text-transform: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-transform: inherit;
+  color: inherit;
 }
 
 .stats__number--up {
-  font-family: inherit;
-  color: inherit;
-  text-transform: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-transform: inherit;
+  color: inherit;
 }

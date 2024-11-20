@@ -1,19 +1,11 @@
-.address {
-  font-family: "Oswald", sans-serif;
-  background-color: #ffffff;
-}
-
 .address__title {
   font-size: 16px;
-  line-height: 20px;
-  font-weight: inherit;
+  line-height: calc(20/16);
   text-transform: uppercase;
-  color: #111111;
+  color: $text-color-accent-2;
 }
 
 .address__text {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
+  line-height: calc(20/14);
+  color: $text-color-base;
 }

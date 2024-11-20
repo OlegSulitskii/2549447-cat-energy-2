@@ -1,17 +1,17 @@
 .intro {
-  font-family: "Oswald", sans-serif;
-  color: #ffffff;
-  background-color: rgba(104, 183, 56, 0.85);
+  font-family: $font-secondary;
+  background-color: $color-accent-transparent;
+  color: $color-contrast-text;
 }
 
 .intro__title {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: inherit;
 }
 
 .intro__slogan {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   text-transform: uppercase;
 }

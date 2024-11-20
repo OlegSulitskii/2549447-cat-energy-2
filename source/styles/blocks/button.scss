@@ -1,11 +1,11 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-size: 16px;
-  line-height: 20px;
+  line-height: calc(20/16);
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $color-contrast-text;
+  background-color: $color-accent;
   text-decoration: none;
   box-sizing: border-box;
   border: none;
@@ -13,10 +13,10 @@
 
 .button--base {
   font-size: 20px;
-  line-height: 26px;
+  line-height: calc(26/20);
 }
 
 .button--secondary {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $text-color-base;
+  background-color: $color-bg-primary;
 }

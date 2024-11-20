@@ -1,12 +1,7 @@
-.catalog {
-  font-family: "Oswald", sans-serif;
-  background-color: #ffffff;
-}
-
 .catalog__title {
   font-size: 36px;
-  line-height: 36px;
-  font-weight: inherit;
+  line-height: 1;
+  color: $text-color-accent;
 }
 
 .catalog__list {

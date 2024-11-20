@@ -1,6 +1,5 @@
 .card {
-  font-family: "Oswald", sans-serif;
-  background-color: #ffffff;
+  background-color: $color-bg-primary;
 }
 
 .card__link-title {
@@ -8,16 +7,14 @@
 }
 
 .card__title {
-  font-weight: inherit;
   font-size: 16px;
-  line-height: 20px;
+  line-height: calc(20/16);
   text-transform: uppercase;
-  color: #222222;
   text-decoration: none;
+  color: $text-color-accent-4;
 }
 
 .card__characteristic {
-  font-family: "Lato", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: calc(16/12);
 }
