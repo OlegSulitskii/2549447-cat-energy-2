@@ -1,3 +1,19 @@
-.navigation {
-  //
+.navigation--close {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    margin-left: auto;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
 }

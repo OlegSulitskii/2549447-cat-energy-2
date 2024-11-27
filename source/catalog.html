@@ -15,20 +15,22 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo-image logo-image" href="index.html">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-cat-energy-img-desktop.svg" width="70" height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-cat-energy-img-tablet.svg" width="60" height="50">
-        <img class="logo-image_picture" src="images/logo-cat-energy-img-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
-      </picture>
-    </a>
-    <a class="header__logo-text logo-text" tabindex="-1" href="index.html">
-      <img class="logo-text_picture" src="images/logo-cat-energy-text.svg" alt="Текстовый вариант логотипа Cat Energy" width="101" height="18">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle button-toggle" type="button">
+    <div class="header__logo-wrapper">
+      <a class="header__logo-image logo-image" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-cat-energy-img-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-cat-energy-img-tablet.svg" width="60" height="50">
+          <img class="logo-image_picture" src="images/logo-cat-energy-img-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
+        </picture>
+      </a>
+      <a class="header__logo-text logo-text" tabindex="-1" href="index.html">
+        <img class="logo-text_picture" src="images/logo-cat-energy-text.svg" alt="Текстовый вариант логотипа Cat Energy" width="101" height="18">
+      </a>
+      <button class="header__toggle button-toggle button-toggle--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="navigation">
       <ul class="navigation__list menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
@@ -282,8 +284,10 @@
       </form>
     </section>
     <section class="address">
-      <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="address__text">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+      <div class="address__wrapper">
+        <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="address__text">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+      </div>
       <picture>
         <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-reserve-desktop@1x.webp 1x, images/map-reserve-desktop@2x.webp 2x" width="1440" height="400">
         <source type="image/webp" media="(min-width: 768px)" srcset="images/map-reserve-tablet@1x.webp 1x, images/map-reserve-tablet@2x.webp 2x" width="768" height="400">

@@ -1,5 +1,12 @@
 .programs__list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
   list-style-type: none;
+  padding: 20px;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .programs__item {
@@ -52,4 +59,40 @@
   height: 12px;
   display: block;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 45px;
+  }
+
+  .programs__list {
+    width: $tablet-width;
+    padding: 0 30px;
+    gap: 30px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text-color-accent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-bottom: 45px;
+  }
+
+  .programs__list {
+    width: $desktop-width;
+    padding: 0 110px;
+    gap: 80px;
+    flex-direction: row;
+  }
 }

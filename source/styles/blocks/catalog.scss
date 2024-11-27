@@ -1,3 +1,10 @@
+.catalog {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 .catalog__title {
   font-size: 36px;
   line-height: 1;
@@ -6,4 +13,20 @@
 
 .catalog__list {
   list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: $tablet-width;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+    margin: 0 auto;
+  }
 }

@@ -1,7 +1,16 @@
 .intro {
   font-family: $font-secondary;
-  background-color: $color-accent-transparent;
+  background-image: linear-gradient($color-accent-transparent 302px, $color-contrast-text 302px);
   color: $color-contrast-text;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .intro__title {
@@ -14,4 +23,70 @@
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-image: none;
+  }
+
+  .intro__wrapper {
+    width: $tablet-width;
+    min-height: 850px;
+    padding: 40px 30px 0;
+    position: relative;
+  }
+
+  .intro__title {
+    color: $text-color-accent;
+    font-size: 60px;
+    max-width: 420px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+  }
+
+  .intro__slogan {
+    color: $text-color-accent;
+    font-size: 20px;
+    max-width: 420px;
+    margin: 0 auto 50px 90px;
+  }
+
+  .intro_picture {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .intro__button {
+    max-width: 244px;
+    margin-left: 90px;
+    margin-bottom: 550px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: linear-gradient(to right, $color-contrast-text 50%, $color-accent-transparent 50%);
+    margin-bottom: 82px;
+  }
+
+  .intro__wrapper {
+    width: $desktop-width;
+    min-height: 550px;
+    padding: 40px 110px 0;
+    position: relative;
+  }
+
+  .intro_picture {
+    z-index: 1;
+    top: 0;
+    left: 600px;
+  }
+
+  .intro__button {
+    max-width: 244px;
+    margin-left: 90px;
+    margin-bottom: auto;
+  }
 }

@@ -1,3 +1,14 @@
+.address {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.address__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
 .address__title {
   font-size: 16px;
   line-height: calc(20/16);
@@ -8,4 +19,39 @@
 .address__text {
   line-height: calc(20/14);
   color: $text-color-base;
+}
+
+.address_map-reserve-image {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    width: $tablet-width;
+  }
+
+  .address__wrapper {
+    padding: 0 30px;
+  }
+
+  .address__title {
+    font-size: 20px;
+    line-height: calc(26/20);
+  }
+
+  .address__text {
+    font-size: 16px;
+    line-height: calc(20/16);
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    width: $desktop-width;
+  }
+
+  .address__wrapper {
+    padding: 0 110px;
+  }
 }
