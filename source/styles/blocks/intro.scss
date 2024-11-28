@@ -7,10 +7,7 @@
 .intro__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  padding: 0 20px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .intro__title {
@@ -31,9 +28,6 @@
   }
 
   .intro__wrapper {
-    width: $tablet-width;
-    min-height: 850px;
-    padding: 40px 30px 0;
     position: relative;
   }
 
@@ -67,21 +61,32 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    background-image: linear-gradient(to right, $color-contrast-text 50%, $color-accent-transparent 50%);
     margin-bottom: 82px;
   }
 
+  .intro::before {
+    content: "";
+    background-image: linear-gradient(to right, $color-contrast-text 50%, $color-accent-transparent 50%);
+    display: block;
+    width: 100%;
+    height: 694px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
   .intro__wrapper {
-    width: $desktop-width;
     min-height: 550px;
-    padding: 40px 110px 0;
-    position: relative;
+  }
+
+  .intro__title {
+    margin-top: 81px;
   }
 
   .intro_picture {
     z-index: 1;
     top: 0;
-    left: 600px;
+    left: 450px;
   }
 
   .intro__button {

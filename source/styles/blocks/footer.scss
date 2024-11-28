@@ -1,15 +1,11 @@
 .footer {
-  display: flex;
   background-color: $color-bg-primary;
 }
 
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .footer__logo-text {
@@ -22,21 +18,13 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    display: flex;
     min-height: 147px;
   }
 
   .footer__wrapper {
     flex-direction: row;
-    width: $tablet-width;
-    padding: 0 30px;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .footer__wrapper {
-    width: $desktop-width;
-    padding: 0 110px;
   }
 }

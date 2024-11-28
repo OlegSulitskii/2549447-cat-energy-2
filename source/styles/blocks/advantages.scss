@@ -1,8 +1,5 @@
 .advantages {
-  width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .advantages__title {
@@ -47,12 +44,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
-    width: $tablet-width;
-    padding: 0 30px;
-    margin: 0 auto;
-  }
-
   .advantages__title {
     font-size: 60px;
     line-height: 1;
@@ -76,11 +67,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages {
-    width: $desktop-width;
-    padding: 0 110px;
-  }
-
   .advantages__list {
     display: flex;
     flex-wrap: nowrap;

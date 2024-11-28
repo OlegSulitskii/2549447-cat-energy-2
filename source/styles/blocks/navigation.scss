@@ -2,9 +2,20 @@
   display: none;
 }
 
+.navigation {
+  position: absolute;
+  top: 65px;
+}
+
 @media (min-width: $tablet-width) {
   .navigation {
     margin-left: auto;
+    position: static;
+    max-width: 530px;
+  }
+
+  .navigation--close {
+    display: block;
   }
 
   .navigation__list {

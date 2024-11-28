@@ -1,14 +1,9 @@
 .header {
-  width: 320px;
-  margin: 0 auto;
-  padding: 14px 20px;
-  box-sizing: border-box;
-  align-items: center;
-}
-
-.header__logo-wrapper {
   display: flex;
+  margin: 0 auto;
   align-items: center;
+  flex-wrap: wrap;
+  min-height: 65px;
 }
 
 .header__logo-image {
@@ -21,11 +16,8 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    display: flex;
-    width: $tablet-width;
-    margin: 0 auto;
-    padding: 25px 30px;
-    box-sizing: border-box;
+    min-height: 100px;
+    margin-bottom: 40px;
   }
 
   .header__logo-image {
@@ -35,11 +27,9 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    display: flex;
-    width: $desktop-width;
-    margin: 0 auto;
-    padding: 55px 110px;
-    box-sizing: border-box;
+    min-height: 59px;
+    padding-top: 55px;
+    margin-bottom: 29px;
   }
 
   .header__logo-image {
