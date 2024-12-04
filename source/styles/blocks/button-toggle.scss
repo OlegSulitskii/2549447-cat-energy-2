@@ -1,19 +1,33 @@
 .button-toggle {
+  display: block;
   background-color: $text-color-accent;
-  mask-image: url("../../icons/stack.svg#button-toggle");
   mask-repeat: no-repeat;
-  mask-size: 24px 24px;
   border: none;
-  width: 24px;
-  height: 24px;
   cursor: pointer;
-}
+  box-sizing: border-box;
 
-.button-toggle--close {
-  mask-image: url("../../icons/stack.svg#button-cross");
-  mask-size: 18px 18px;
-  width: 18px;
-  height: 18px;
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &--open {
+    mask-image: url("../../icons/stack.svg#button-toggle");
+    mask-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--close {
+    mask-image: url("../../icons/stack.svg#button-cross");
+    mask-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 @media (min-width: $tablet-width) {

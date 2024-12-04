@@ -1,9 +1,11 @@
 .social__list {
   display: flex;
-  gap: 24px;
   list-style-type: none;
-  padding: 0;
   margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 7px 0;
+  justify-content: center;
+  border-bottom: 1px solid $color-accent-3;
 }
 
 .social__link {
@@ -16,16 +18,28 @@
   height: 22px;
   display: block;
   cursor: pointer;
-}
+  padding: 12px;
+  mask-position: 50%;
 
-.social__link--vkontakte {
-  mask-image: url("../../icons/stack.svg#icon-vkontakte");
-}
+  &--vkontakte {
+    mask-image: url("../../icons/stack.svg#icon-vkontakte");
+  }
 
-.social__link--youtube {
-  mask-image: url("../../icons/stack.svg#icon-youtube");
-}
+  &--youtube {
+    mask-image: url("../../icons/stack.svg#icon-youtube");
+  }
 
-.social__link--telegram {
-  mask-image: url("../../icons/stack.svg#icon-telegram");
+  &--telegram {
+    mask-image: url("../../icons/stack.svg#icon-telegram");
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-accent;
+  }
+
+  &:active {
+    background-color: $color-accent;
+    opacity: 0.3;
+  }
 }

@@ -4,4 +4,9 @@
   font-size: 20px;
   line-height: calc(3/2);
   color: $text-color-base;
+  height: 56px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid $color-accent-4;
+  // border-radius: 0;
 }

@@ -1,7 +1,11 @@
+.address--secondary {
+  background-color: $color-bg-primary;
+}
+
 .address__wrapper {
   display: flex;
-  align-items: center;
   margin: 0 auto;
+  padding: 26px 0;
 }
 
 .address__title {
@@ -9,16 +13,14 @@
   line-height: calc(20/16);
   text-transform: uppercase;
   color: $text-color-accent-2;
+  width: 50%;
 }
 
 .address__text {
   line-height: calc(20/14);
   color: $text-color-base;
-}
-
-.address_map-reserve-image {
-  display: block;
-  margin: 0 auto;
+  width: 50%;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {

@@ -4,18 +4,42 @@
 
 .stats__wrapper {
   margin: 0 auto;
+  padding: 25px 20px 40px;
 }
 
 .stats__title {
   font-size: 36px;
   line-height: calc(40/36);
   color: $text-color-accent;
+  margin-bottom: 40px;
+}
+
+.stats__description {
+  margin: 0 0 20px;
+}
+
+.stats__list {
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  gap: 20px 32px;
+  margin: 0 0 20px;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stats__term {
   font-size: 12px;
   line-height: 1;
   text-transform: lowercase;
+  order: 1;
+  width: 87px;
+  text-align: center;
+  margin-top: -10px;
+  background-color: $color-bg-secondary;
 }
 
 .stats__number {
@@ -24,28 +48,40 @@
   line-height: 1;
   text-transform: uppercase;
   color: $text-color-accent;
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  border: 1px solid $color-accent-4;
+  border-radius: 2px;
 }
 
-.stats__item--up {
+.stats__item-up {
+  grid-column: 1/-1;
+  flex-flow: wrap;
   font-family: $font-secondary;
   font-size: 14px;
   line-height: calc(20/14);
   text-transform: uppercase;
   color: $text-color-accent;
+  margin: 0 auto;
+  gap: 4px;
 }
 
-.stats__term--up {
+.stats__term-up {
   font-size: inherit;
   line-height: inherit;
   text-transform: inherit;
   color: inherit;
 }
 
-.stats__number--up {
+.stats__number-up {
   font-size: inherit;
   line-height: inherit;
   text-transform: inherit;
   color: inherit;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {

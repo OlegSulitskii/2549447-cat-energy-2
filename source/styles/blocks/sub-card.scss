@@ -1,3 +1,14 @@
+.sub-card {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 19px;
+  border-top: 1px solid $color-accent-4;
+
+  &:last-child {
+    border-bottom: 1px solid $color-accent-4;
+  }
+}
+
 .sub-card__title {
   font-size: 16px;
   line-height: 1;
@@ -6,6 +17,14 @@
 }
 
 .sub-card__characteristic {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 1;
+  margin: 13px 0 15px;
+}
+
+.sub-card__characteristic-number {
+  margin: 0;
+  max-width: 50%;
 }

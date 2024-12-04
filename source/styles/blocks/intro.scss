@@ -1,13 +1,20 @@
 .intro {
   font-family: $font-secondary;
-  background-image: linear-gradient($color-accent-transparent 302px, $color-contrast-text 302px);
+  background-color: $color-accent-transparent;
+  background-image: linear-gradient($color-accent-transparent 61%, $color-contrast-text 61%), image-set("../../images/intro-bg-licking-cat-mobile@1x.webp" 1x type("image/webp"), "../../images/intro-bg-licking-cat-mobile@2x.webp" 2x type("image/webp")), linear-gradient(to right, #4e4d51 50%, #414045 50%);
   color: $color-contrast-text;
+  background-repeat: no-repeat;
+  background-size: contain, 490px 302px, contain;
+  background-position: 50% 0;
+  text-align: center;
 }
 
 .intro__wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 20px;
 }
 
 .intro__title {
@@ -17,9 +24,10 @@
 }
 
 .intro__slogan {
-  font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
