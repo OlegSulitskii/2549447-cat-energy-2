@@ -1,5 +1,5 @@
 .sub-product {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .sub-product__title {
@@ -13,4 +13,44 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .sub-product {
+    margin-bottom: 80px;
+  }
+
+  .sub-product__title {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 80px;
+    margin-left: 40px;
+  }
+
+  .sub-product__list {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub-product {
+    margin-bottom: 96px;
+  }
+
+  .sub-product__title {
+    margin-left: 0;
+  }
+
+  .sub-product__container {
+    display: flex;
+  }
+
+  .sub-product__list {
+    margin-bottom: 0;
+  }
+
+  .sub-product__promo {
+    margin-left: auto;
+  }
 }

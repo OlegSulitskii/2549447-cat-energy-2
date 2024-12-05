@@ -12,25 +12,47 @@
   display: block;
   padding: 10px;
 
+  &--base {
+    font-size: 20px;
+    line-height: calc(26/20);
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-accent-6;
+    }
+
+    &:active {
+      color: rgba($color-contrast-text, 0.3);
+    }
+  }
+
+  &--primary {
+    &:hover,
+    &:focus-visible {
+      background-color: $color-accent-6;
+    }
+
+    &:active {
+      color: rgba($color-contrast-text, 0.3);
+    }
+  }
+
+  &--secondary {
+    color: $text-color-base;
+    background-color: $color-bg-primary;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-accent-5;
+    }
+
+    &:active {
+      background-color: $color-accent-3;
+    }
+  }
+
   &:disabled {
     opacity: 0.2;
     pointer-events: none;
-  }
-}
-
-.button--base {
-  font-size: 20px;
-  line-height: calc(26/20);
-}
-
-.button--secondary {
-  color: $text-color-base;
-  background-color: $color-bg-primary;
-}
-
-@media (min-width: $tablet-width) {
-  .button {
-    font-size: 20px;
-    line-height: calc(26/20);
   }
 }

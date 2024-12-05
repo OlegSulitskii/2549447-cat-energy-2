@@ -1,16 +1,21 @@
 .navigation {
   border-bottom: 1px solid $color-accent-2;
-}
+  min-width: 100%;
 
-.navigation--open {
-  position: absolute;
-  top: 65px;
-  right: 0;
-  left: 0;
-}
+  &--open {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    left: 0;
+  }
 
-.navigation--close {
-  display: none;
+  &--close {
+    display: none;
+  }
+
+  &--nojs {
+    position: static;
+  }
 }
 
 .navigation__list {
@@ -24,11 +29,13 @@
   .navigation {
     margin-left: auto;
     position: static;
-    max-width: 530px;
-  }
+    min-width: auto;
+    max-width: 500px;
+    border: none;
 
-  .navigation--close {
-    display: block;
+    &--close {
+      display: block;
+    }
   }
 
   .navigation__list {
@@ -39,5 +46,11 @@
 
   .navigation__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    background-color: transparent;
   }
 }

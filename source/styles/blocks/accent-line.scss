@@ -16,3 +16,11 @@
     z-index: -1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .accent-line {
+    &::before {
+      top: 16px;
+    }
+  }
+}

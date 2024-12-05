@@ -15,21 +15,61 @@
   width: 280px;
 }
 
+.catalog__list-wrapper {
+  .wrapper {
+    width: 100%;
+  }
+}
+
 .catalog__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    width: calc($tablet-width - 60px);
+    margin: 0 auto 74px;
+  }
+
+  .catalog__wrapper {
+    border: none;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 auto 84px 0;
+    width: 500px;
+  }
+
+
+  .catalog__list-wrapper {
+    .wrapper {
+      width: calc($tablet-width - 60px);
+    }
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(2, 324px);
     gap: 60px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    width: calc($desktop-width - 220px);
+    margin: 0 auto 71px;
+  }
+
+  .catalog__list-wrapper {
+    .wrapper {
+      width: calc($desktop-width - 220px);
+    }
+  }
+
   .catalog__list {
     grid-template-columns: repeat(4, 245px);
     gap: 80px;

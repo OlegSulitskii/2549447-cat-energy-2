@@ -21,6 +21,7 @@
   font-size: 36px;
   line-height: 1;
   font-weight: inherit;
+  text-align: start;
 }
 
 .intro__slogan {
@@ -28,11 +29,13 @@
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 29px;
+  text-align: start;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
     background-image: none;
+    background-color: transparent;
   }
 
   .intro__wrapper {
@@ -64,6 +67,8 @@
     max-width: 244px;
     margin-left: 90px;
     margin-bottom: 550px;
+    font-size: 20px;
+    line-height: calc(26/20);
   }
 }
 
@@ -74,17 +79,21 @@
 
   .intro::before {
     content: "";
-    background-image: linear-gradient(to right, $color-contrast-text 50%, $color-accent-transparent 50%);
+    background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../../images/intro-bg-licking-cat-desktop@1x.webp" 1x type("image/webp"), "../../images/intro-bg-licking-cat-desktop@2x.webp" 2x type("image/webp")), linear-gradient(to right, #403f45, #403f45);
     display: block;
-    width: 100%;
+    width: 50%;
     height: 694px;
     position: absolute;
     top: 0;
     z-index: -1;
+    background-repeat: no-repeat;
+    margin-left: 720px;
+    right: 0;
   }
 
   .intro__wrapper {
-    min-height: 550px;
+    min-height: 545px;
+    padding: 0;
   }
 
   .intro__title {

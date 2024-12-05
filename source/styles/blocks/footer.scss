@@ -36,7 +36,18 @@
 
   .footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+  }
+
+  .footer__logo-text {
+    border: none;
+    margin-right: auto;
+    width: 170px;
+    justify-content: start;
+  }
+
+  .footer__developer {
+    margin-left: auto;
+    margin-top: 0;
   }
 }

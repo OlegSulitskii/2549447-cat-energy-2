@@ -16,3 +16,34 @@
   margin: 24px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .subscribe {
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+  }
+
+  .subscribe__title {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 66px;
+  }
+
+  .subscribe__text {
+    font-size: 24px;
+    line-height: calc(32/24);
+    margin: 0 50px 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscribe {
+    padding: 0;
+    margin-bottom: 104px;
+  }
+
+  .subscribe__title {
+    margin-bottom: 72px;
+  }
+}

@@ -64,4 +64,8 @@
     background-color: currentColor;
     mask-image: url("../../icons/stack.svg#button-slider");
   }
+
+  &:focus-visible::before {
+    color: $color-accent;
+  }
 }
